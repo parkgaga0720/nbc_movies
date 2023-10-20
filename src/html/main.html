@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/common.css" />
+    <title>NBC Movies</title>
+  </head>
+
+  <body>
+    <h1 onclick="window.location.reload()">NBC Movies</h1>
+
+    <form class="movie_search" onsubmit="handleSearch(event)">
+      <label>영화 검색 : </label>
+      <input type="text" class="txt_search" placeholder="검색어를 입력하세요" />
+      <button type="submit" class="btn_search">찾기</button>
+    </form>
+
+    <div class="movie_list">
+      <div id="movie_card"></div>
+    </div>
+
+    <script src="../js/common.js"></script>
+  </body>
+</html>
